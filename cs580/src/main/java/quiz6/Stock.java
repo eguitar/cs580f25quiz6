@@ -21,6 +21,7 @@ public class Stock {
             notifyObservers();
         }
     }
+    public double getPrice() { return price; }
 
     private void notifyObservers() {
         for (Observer observer : observers) {
